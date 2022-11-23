@@ -1,0 +1,25 @@
+import random
+
+
+# fare 10 lanci per alice e bob
+# scriverlo su un file
+
+def lancioDadi():
+    file = open("lancioDadi.txt", "w")
+
+    lista_Alice = [random.radiant(1, 6) for _ in range(10)]
+    lista_Bob = [random.radiant(1, 6) for _ in range(10)]
+
+    for k, v in zip(lista_Alice, lista_Bob):
+        print(f"{k} , {v}\n")
+        file.write(f"{k} , {v}\n")
+
+    file.close()
+
+
+def main():
+    lancioDadi()
+
+
+if __name__ == "_main":
+    main()
