@@ -1,0 +1,21 @@
+#dizionario
+
+d = {1:"abello", 2:"armando"}
+
+print(d)
+
+d2 = {"abello":[8,9,7,10], "armando":[5,6,7,8]}
+
+#indicizzazione mediante le chiavi
+
+print(d[2])
+print(d2["abello"])
+
+
+#es13
+
+#fare un programma in cui inizialliziamo un dizionario che funga da rubrica teleofonica, nome e la chiave il valore e il numero di telefono
+
+rubrica = {"zup":3338375082, "barale":3936414505}
+rubrica["nuovo"] = 3668998106
+print(rubrica)
