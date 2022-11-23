@@ -1,0 +1,5 @@
+parola = input("inserisci la tua parola: ")
+
+parola[2:4] = "?"
+
+print(parola[:])
