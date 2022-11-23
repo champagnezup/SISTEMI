@@ -1,0 +1,25 @@
+import turtle
+import random
+
+SPEED = 0
+TOT = 1 * 60 * 120
+
+finestra = turtle.Screen()
+
+def impazzito(robotpazzo):
+    robotpazzo.speed(SPEED)
+    robotpazzo.right(90*(random.randrange((3)+1)+1))
+    robotpazzo.forward(10)
+
+def main():
+    robotpazzo = turtle.Turtle()
+    robotpazzo.shape("turtle")
+    robotpazzo.color("purple")
+
+    for k in range(0, (TOT)):
+        impazzito(robotpazzo)
+
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
