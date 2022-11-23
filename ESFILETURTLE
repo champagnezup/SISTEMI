@@ -1,0 +1,27 @@
+import turtle
+
+
+def leggifile():
+    count = 0
+    file = open("comandi.csv", "r")
+    lista_righe = file.readlines()
+    print(lista_righe)
+
+    for riga in lista_righe[:]:
+        count+1
+        if (riga[-1] == "\n"):
+            riga_senza_linefeed = riga[:-1]  # senza \n
+        else:
+            riga_senza_linefeed = riga
+        # print(riga_senza_linefeed)
+        lista_campi = riga_senza_linefeed.split(",")
+        comando = lista_campi[count]
+        parametro = lista_campi[count+1]
+        print(comando)
+        print(parametro)
+
+def main():
+    leggifile()
+
+if __file__ == "__main__":
+    main()
