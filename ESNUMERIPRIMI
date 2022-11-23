@@ -1,0 +1,49 @@
+def bin2dec(numBin):
+    num_bin_divio = numBin.split(".")
+    lista_int = [int(gruppo) for gruppo in num_bin_divio]
+    s = ""
+    for gruppo in lista_int:
+        s = s + gruppo + "."
+    print(s)
+
+
+
+class IPadress():
+    def __init__(self, ip_string):
+        self.ip_notazione_dec = ip_string
+        self.ip_notazione_bin = None
+        self.ip_binario = None
+
+    def dec2bin(self):
+        lista_stringhe = self.ip_notazione_dec.split(".")
+        lista_int = [int(gruppo) for gruppo in lista_stringhe]
+        s = ""
+        s2 = ""
+        for gruppo in lista_int:
+            temp = bin(gruppo)[2:]
+            temp = "0" * (8 - len(temp)) + temp
+            s = s + temp + "."
+            s2 = s2 + temp
+        self.ip_notazione_bin = s[:-1]
+        self.ip_binario = s2
+
+    def tolist(self):
+        lista_stringhe = self.ip_notazione_dec.split(".")
+        return [int(gruppo) for gruppo in lista_stringhe]
+
+    def ipBrodacast(self, SM = "/24"):
+        #stampare ip di broadcast in notazione decimale puntata
+        pass
+
+
+
+def main():
+    indirizzoIP = IPadress("192.168.0.102")
+    print(indirizzoIP.ip_notazione_dec)
+    indirizzoIP.dec2bin()
+    print(indirizzoIP.ip_notazione_bin)
+    print(indirizzoIP.tolist())
+    bin2dec(11000000.1010)
+
+if __name__ == "__main__":
+    main()
