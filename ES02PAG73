@@ -1,0 +1,10 @@
+num = int(input("inserisci un numero: "))
+
+if(num % 2 == 0):
+    print("il numero e' divisibile per 2\n")
+elif(num % 3 == 0):
+    print("il numero e' divisibile per 3\n")
+elif(num %5 == 0):
+     print("il numero e' divisibile per 5\n")
+else:
+    print("il numero non e' divisibile per 2, 3 e 5\n")
