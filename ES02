@@ -1,0 +1,9 @@
+prima, seconda = 2, 5 #assegnazione multipla
+
+print(f"il valore di a e': {prima}, il valore di b e': {seconda}")
+
+
+prima, seconda = seconda, prima
+
+
+print(f"il valore di a e': {prima}, il valore di b e': {seconda}")
