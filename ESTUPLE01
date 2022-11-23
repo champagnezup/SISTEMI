@@ -1,0 +1,7 @@
+#tuple simile alle liste ma immutabili
+punto = (1.5,3.6)
+print(f"la coordinata x del punto è {punto[0]}")
+triangolo = [(1,3), (-1,0), (5,4)]
+print(f"la coordinata y del secondo vertice è {triangolo[1][1]}")
+
+area = (1/2) * abs((triangolo[0] * triangolo[1][1] + triangolo[0][0] * triangolo[2]) + (triangolo[1] * triangolo[2][2]) - (triangolo[2] * triangolo[1][1]) - (triangolo[2][2] * triangolo[0]) - (triangolo[1] * triangolo[0][0]) )
