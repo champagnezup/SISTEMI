@@ -1,0 +1,8 @@
+lista = []
+
+def verificaPrimo(k):
+    for i in range(1, 101):
+        if k % i ==
+for i in range (1, 101):
+    if verificaPrimo(i):
+        lista.append(i)
