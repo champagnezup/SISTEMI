@@ -1,0 +1,12 @@
+#chiedere all'utente due numeri e fare un dizionario in cui sono presenti due numero media aritmetica media geometrica
+#radice di a + b
+
+n1 = int(input("inserisci il primo numero: "))
+n2 = int(input("inserisci il secondo nuemro: "))
+
+mediaaritmetica = (n1 + n2)/2
+mediageometrica = (n1 + n2)**0.5
+
+calcoli = {"mediaaritmetica" : mediaaritmetica, "mediageometrica" : mediageometrica}
+
+print(calcoli)
