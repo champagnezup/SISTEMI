@@ -1,0 +1,34 @@
+lista1 = [1,2,3,4];
+lista2 = ["a", "b", "c", "d"];
+
+#for su lista c-style
+print("for su lista in c-style: ")
+for i in range (0,len(lista1)):
+    print(lista1[i])
+#for su lista python-style
+print("for su lista in pyhton-style: ")
+for k in lista1:
+    print(k)
+#for su lista con enumerate
+print("for su lista con enumerate: ")
+for count, value in enumerate(lista1):
+    print(value)
+#for su lista1 e lista2 python-style(zip)
+print("for su liste con zip: ")
+for v1, v2 in zip(lista1, lista2):
+    print(v1, v2)
+#for su lista1 e lista2 c-style(range)
+print("for su liste con range: ")
+for i in range(0, len(lista1)):
+    print(lista1[i], lista2[i])
+
+diz = {1:"nicla", 2:"troppo", 3:"bella"}
+
+#for su diz usando items
+print("for su diz usando items: ")
+for d1, d2 in diz.items():
+    print(d1, d2)
+#for su diz senza usare items
+print("for su diz senza usare items: ")
+for key in diz:
+    print(diz[key])
