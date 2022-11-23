@@ -1,0 +1,3 @@
+parola = input("inserisci la tua parola: ")
+
+print(parola[1::2])
