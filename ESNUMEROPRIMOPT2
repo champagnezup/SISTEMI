@@ -1,0 +1,34 @@
+n = int(input("Inserire un numero: "))
+
+c = True
+i = 2
+
+while i < n and c == True:
+    if n % i == 0:
+        c = False
+    if n % i == 1:
+        c = True
+    i = i + 1
+
+if c == True:
+    print("il numero è primo")
+else:
+    print("Il numero non è primo")
+
+print("prod by Zup😍")
+
+
+#metodo veloce
+
+def isPrimo(n):
+    for i in range(2, int(n ** 0, 5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+verifica = isPrimo(n)
+
+if verifica:
+    print("il numero è primo")
+else:
+    print("Il numero non è primo")
