@@ -1,0 +1,8 @@
+matematici = ["Gauss", "Conway", "Eulero", "Hilbent"]
+
+l_GH = [nome for nome in matematici if nome[0] == "G" or nome[0] == "H"]
+
+print(l_GH)
+
+#stringa.upper() --> mettere la stringa tutto in maiuscolo
+#stringa.lower() --> stringa tutto in minuscolo
