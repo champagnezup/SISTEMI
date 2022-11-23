@@ -1,0 +1,28 @@
+class quadrato():
+    def __init__(self, side, x, y):
+        self.side = side
+        self.x = x
+        self.y = y
+
+    def getArea(self):
+        return (self.side ** 2)
+
+    def getPer(self):
+        return (self.side * 4)
+
+    def checkXY(self):
+        return ((self.x <= self.side and self.x >= 0) and (self.y <= self.side and self.y >= 0))
+
+
+def main():
+    q1 = quadrato(16, 4, 5)
+    print(f"area: {q1.getArea()}")
+    print(f"area: {q1.getPer()}")
+    if (q1.checkXY):
+        print(f"interno al quadrato")
+    else:
+        print(f"esterno al quadrato")
+
+
+if __name__ == "__main__":
+    main()
