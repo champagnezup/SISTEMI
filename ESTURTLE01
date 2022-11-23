@@ -1,0 +1,21 @@
+from turtle import *
+
+nLati = int(input("inserisci il numero di lati: "))
+colorepenna = input("inserisci il colore della penna(in inglese e lettere minuscole): ")
+coloresfondo = input("inserisci il colore dello sfondo(in inglese e lettere minuscole): ")
+L_LATO = 100
+
+Screen().title("BEL DISEGNO")
+Screen().bgcolor(coloresfondo)
+pencolor(colorepenna)
+
+penup()
+goto(0, 250)
+pendown()
+pensize(8)
+
+for k in range(nLati):
+    forward(L_LATO/nLati * 10)
+    right(360/nLati)
+
+done()
